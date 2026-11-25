@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Meble spawane i konstrukcje stalowe Gliwice - RAF-SPAW</title>
+<meta name="description" content="RAF-SPAW Gliwice: stelaże i szafki pod akwarium, meble loft na wymiar, konstrukcje stalowe i podpory pod instalacje przemysłowe. Tel. 513 853 247.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/g6-900.webp" imagesrcset="img/g6-480.webp 480w, img/g6-900.webp 900w, img/g6-1200.webp 1200w" imagesizes="(max-width:640px) 100vw, max(34vw, 75vh)" fetchpriority="high">
+<style>
+@font-face{font-family:Archivo;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:Archivo;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-ext-400.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Archivo;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:Archivo;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-ext-600.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  --czern:#000000;--grafit:#111214;--stal:#EEF0F2;--stal2:#D9DDE1;--tekst:#1B1D20;--szary:#5A6068;
+  --iskra:#F26A1B;--iskra-ciemna:#C9520D;--bialy:#FFFFFF;
+  --profil:10px;--szer:min(92vw,1680px);--naglowek:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--naglowek)}
+body{margin:0;font:400 17px/1.6 Archivo,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--tekst);background:var(--bialy);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.2vw,48px)}
+h3{font-size:clamp(20px,1.6vw,26px)}
+p{margin:0}
+.kontener{width:var(--szer);margin:0 auto}
+.sekcja{padding:clamp(64px,8vw,120px) 0}
+
+/* spoina: kwadratowy punkt w narożniku ramy */
+.spoina{position:relative}
+.spoina::before{content:"";position:absolute;width:12px;height:12px;background:var(--iskra);left:-6px;top:-6px;z-index:2}
+
+/* przyciski */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:600 17px/1 Archivo,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;position:relative;transition:background .2s,color .2s,border-color .2s}
+.btn::after{content:"";position:absolute;right:-2px;top:-2px;width:10px;height:10px;background:var(--czern)}
+.btn-iskra{background:var(--iskra);color:#fff}
+.btn-iskra:hover{background:var(--iskra-ciemna)}
+.hero .btn-iskra::after,.ciemna .btn-iskra::after{background:#fff}
+.btn-jasny{background:transparent;color:#fff;border-color:#fff}
+.btn-jasny::after{background:var(--iskra)}
+.btn-jasny:hover{background:#fff;color:var(--czern)}
+.btn-czarny{background:var(--czern);color:#fff}
+.btn-czarny::after{background:var(--iskra)}
+.btn-czarny:hover{background:#2a2c30}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* nagłówek */
+.gora{position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid var(--czern);height:var(--naglowek)}
+.gora .kontener{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--czern);flex:none}
+.logo svg{width:38px;height:38px}
+.logo span{font:600 20px/1 Archivo,sans-serif;letter-spacing:.01em}
+.menu{display:flex;align-items:center;gap:clamp(18px,2.2vw,36px)}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;border-bottom:3px solid transparent}
+.menu a:hover{border-color:var(--iskra)}
+.menu .btn{min-height:44px;padding:0 18px;font-size:16px;border-bottom:2px solid transparent}
+.menu .btn:hover{border-color:transparent}
+.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:3px;background:var(--czern);margin:5px 0}
+
+/* pierwszy ekran: tryptyk na stalowej ramie */
+.hero{position:relative;background:var(--czern);min-height:calc(100svh - var(--naglowek));display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.tryptyk{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--profil);background:var(--czern)}
+.tryptyk figure{margin:0;position:relative;overflow:hidden}
+.tryptyk img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tryptyk figure:nth-child(1) img{object-position:50% 72%}
+.tryptyk figure:nth-child(3) img{object-position:40% 50%}
+.tryptyk a.etykieta{position:absolute;left:14px;top:14px;background:var(--czern);color:#fff;text-decoration:none;font:600 14px/1 Archivo,sans-serif;padding:9px 12px}
+.tryptyk a.etykieta:hover{background:var(--iskra)}
+.zlacze{position:absolute;top:0;bottom:0;width:var(--profil);z-index:3;pointer-events:none}
+.zlacze::before,.zlacze::after{content:"";position:absolute;left:-1px;width:12px;height:12px;background:var(--iskra)}
+.zlacze::before{top:-1px}.zlacze::after{bottom:-1px}
+.zlacze.z1{left:calc((100% - 2 * var(--profil)) / 3)}
+.zlacze.z2{left:calc((100% - 2 * var(--profil)) / 3 * 2 + var(--profil))}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.55) 58%,rgba(0,0,0,.88) 100%);z-index:1}
+.hero-tekst{position:relative;z-index:4;width:var(--szer);margin:0 auto;padding:40px 0 clamp(36px,6vh,72px);color:#fff}
+.hero h1{font-size:clamp(32px,4.6vw,76px);max-width:15.5em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero p{font-size:clamp(17px,1.35vw,21px);max-width:44em;margin-top:18px;color:#EDEFF1}
+.hero .przyciski{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+
+/* oferta */
+.naglowek-sekcji{display:flex;justify-content:space-between;align-items:flex-end;gap:24px 60px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,56px)}
+.naglowek-sekcji p{max-width:38em;color:var(--szary);font-size:18px}
+.profil-linia{height:6px;background:var(--czern);position:relative;margin-bottom:clamp(32px,4vw,56px)}
+.profil-linia::before,.profil-linia::after{content:"";position:absolute;top:-3px;width:12px;height:12px;background:var(--iskra)}
+.profil-linia::before{left:0}.profil-linia::after{right:0}
+.oferta{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2vw,36px)}
+.karta{border:3px solid var(--czern);background:#fff;display:flex;flex-direction:column}
+.karta .foto{aspect-ratio:4/3;overflow:hidden;border-bottom:3px solid var(--czern)}
+.karta .foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta:hover .foto img{transform:scale(1.03)}
+.karta .opis{padding:24px 24px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.karta .opis p{color:var(--szary)}
+.karta .opis a{margin-top:auto;padding-top:8px;font-weight:600;text-decoration:none;color:var(--czern);display:inline-flex;align-items:center;gap:8px}
+.karta .opis a::after{content:"";width:22px;height:3px;background:var(--iskra);transition:width .2s}
+.karta .opis a:hover::after{width:36px}
+
+/* akwarystyka - ciemna sekcja */
+.ciemna{background:var(--grafit);color:#E7E9EC}
+.akwa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,96px);align-items:center}
+.akwa .ramka{border:var(--profil) solid var(--czern);outline:1px solid #2b2e33;max-width:640px;justify-self:center;width:100%}
+.akwa .ramka img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.akwa h2{color:#fff}
+.akwa p{margin-top:18px;color:#C3C8CE;max-width:36em;font-size:18px}
+.akwa ul{list-style:none;padding:0;margin:28px 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:0 32px;max-width:640px}
+.akwa li{padding:14px 0 14px 26px;border-top:1px solid #2E3237;position:relative}
+.akwa li::before{content:"";position:absolute;left:0;top:22px;width:10px;height:10px;background:var(--iskra)}
+
+/* realizacje - galeria przesuwana */
+.szara{background:var(--stal)}
+.galeria-wrap{position:relative}
+.galeria{display:flex;gap:clamp(12px,1.2vw,20px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab;-webkit-overflow-scrolling:touch}
+.galeria::-webkit-scrollbar{display:none}
+.galeria.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.galeria figure{margin:0;flex:0 0 clamp(240px,22vw,400px);scroll-snap-align:start;background:#fff;border:3px solid var(--czern)}
+.galeria img{width:100%;aspect-ratio:3/4;object-fit:cover;pointer-events:none;user-select:none}
+.galeria figcaption{padding:12px 14px;font-weight:600;font-size:15px;border-top:3px solid var(--czern)}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:52px;height:52px;border:3px solid var(--czern);background:#fff;cursor:pointer;display:grid;place-items:center}
+.strzalki button:hover{background:var(--czern);color:#fff}
+.strzalki svg{width:20px;height:20px}
+
+/* o firmie */
+.firma{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:start}
+.firma .foto{border:3px solid var(--czern)}
+.firma .foto img{width:100%}
+.firma p{margin-top:18px;font-size:18px;max-width:40em}
+.kroki{margin:32px 0 0;padding:0;list-style:none;counter-reset:k;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:6px solid var(--czern)}
+.kroki li{padding:20px 22px 0 0;position:relative}
+.kroki li::before{content:"";position:absolute;left:0;top:-9px;width:12px;height:12px;background:var(--iskra)}
+.kroki b{display:block;margin:6px 0 4px}
+.kroki span{color:var(--szary);font-size:16px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px)}
+.dane{display:grid;gap:22px;margin-top:28px}
+.dane a{text-decoration:none}
+.dane .duzy{font-size:clamp(26px,2.4vw,36px);font-weight:600;color:var(--czern)}
+.dane .duzy:hover{color:var(--iskra-ciemna)}
+.dane small{display:block;color:var(--szary);font-size:15px;margin-bottom:2px}
+.godziny{display:grid;grid-template-columns:auto auto;gap:4px 24px;justify-content:start}
+.mapa{margin-top:28px;border:3px solid var(--czern);aspect-ratio:16/9;background:#dfe3e7;display:grid;place-items:center;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;border:3px solid var(--czern);padding:clamp(22px,3vw,40px);display:grid;gap:16px;align-content:start}
+form h3{margin-bottom:4px}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,textarea{font:400 17px/1.4 Archivo,sans-serif;padding:13px 14px;border:2px solid #B9BFC6;background:#fff;color:var(--tekst);width:100%;border-radius:0}
+input:focus,textarea:focus{outline:none;border-color:var(--czern)}
+textarea{min-height:130px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.uwaga{font-size:14px;color:var(--szary)}
+#komunikat{font-weight:600;color:var(--iskra-ciemna)}
+
+/* stopka */
+.stopka{background:var(--czern);color:#B9BEC4;padding:56px 0 28px;font-size:15px}
+.stopka .siatka{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.stopka b{color:#fff;display:block;margin-bottom:8px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka .logo{color:#fff;margin-bottom:14px}
+.stopka .wylinka-badge{white-space:nowrap}
+.stopka .dol{margin-top:40px;padding-top:20px;border-top:1px solid #2a2c30;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* znak Wylinki */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* szeroki ekran */
+@media (min-width:1900px){
+  body{font-size:18px}
+  .galeria figure{flex-basis:clamp(300px,17vw,420px)}
+}
+/* tablet */
+@media (max-width:1100px){
+  .oferta{grid-template-columns:1fr 1fr}
+  .oferta .karta:last-child{grid-column:1/-1}
+  .oferta .karta:last-child .foto{aspect-ratio:16/7}
+  .kroki{grid-template-columns:1fr 1fr;gap:24px 20px;border-top:0}
+  .kroki li{border-top:4px solid var(--czern);padding-top:16px}
+  .kroki li::before{top:-8px}
+  .stopka .siatka{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .menu{position:fixed;inset:var(--naglowek) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 4vw 20px;border-bottom:3px solid var(--czern);display:none}
+  .menu.otwarte{display:flex}
+  .menu a{padding:15px 0;border-bottom:1px solid var(--stal2);font-size:18px}
+  .menu .btn{margin-top:14px;min-height:52px}
+  .burger{display:block}
+  .akwa,.firma,.kontakt{grid-template-columns:1fr}
+  .akwa .ramka{max-width:520px;justify-self:start}
+  .firma .foto{max-width:420px}
+}
+/* telefon */
+@media (max-width:640px){
+  :root{--profil:6px;--naglowek:60px}
+  body{font-size:16px}
+  .logo svg{width:34px;height:34px}
+  .logo span{font-size:18px}
+  .hero{display:flex;flex-direction:column;justify-content:flex-start}
+  .hero::after{display:none}
+  .tryptyk{position:relative;inset:auto;flex:1 1 auto;min-height:150px;grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)}
+  .tryptyk figure:nth-child(1) img{object-position:50% 54%}
+  .tryptyk figure:nth-child(2) img{object-position:50% 38%}
+  .tryptyk figure:nth-child(3) img{object-position:50% 52%}
+  .tryptyk figure+figure::before,.tryptyk figure+figure::after{content:"";position:absolute;top:0;width:10px;height:10px;background:var(--iskra);z-index:2}
+  .tryptyk figure+figure::before{left:0}.tryptyk figure+figure::after{right:0}
+  .zlacze{display:none}
+  .tryptyk a.etykieta{left:8px;top:8px;font-size:12px;padding:7px 8px}
+  .hero-tekst{padding:20px 0 24px;flex:none}
+  .hero h1{font-size:clamp(28px,8vw,34px)}
+  .hero p{font-size:16px;margin-top:12px;line-height:1.5}
+  .hero .przyciski{margin-top:24px;gap:10px}
+  .hero .btn{width:100%;min-height:50px}
+  .oferta{grid-template-columns:1fr}
+  .oferta .karta:last-child .foto{aspect-ratio:4/3}
+  .akwa ul{grid-template-columns:1fr}
+  .firma .foto{max-width:250px}
+  .galeria figure{flex-basis:72vw}
+  .naglowek-sekcji .strzalki{display:none}
+  .kroki{grid-template-columns:1fr}
+  .dwa{grid-template-columns:1fr}
+  .stopka .siatka{grid-template-columns:1fr 1fr;gap:24px 16px}
+  .stopka .siatka>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px) and (max-height:700px){
+  .hero h1{font-size:27px}
+  .hero p{font-size:15px}
+  .hero .btn{min-height:46px}
+}
+</style>
+</head>
+<body>
+
+<header class="gora">
+  <div class="kontener">
+    <a class="logo" href="#" aria-label="RAF-SPAW - strona główna">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" stroke-width="3.4"/><path d="M14.2 29V11h6.6c4 0 6.3 2 6.3 5.3 0 2.5-1.3 4.2-3.6 4.9L27.6 29h-4.4l-3.7-7.4h-1.3V29h-4zm4-10.7h2.4c1.7 0 2.6-.8 2.6-2.1s-.9-2.1-2.6-2.1h-2.4v4.2z" fill="currentColor"/></svg>
+      <span>RAF-SPAW.PL</span>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#oferta">Oferta</a>
+      <a href="#akwarystyka">Meble akwarystyczne</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#firma">O firmie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-czarny" href="tel:+48513853247"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>513 853 247</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="tryptyk">
+    <figure>
+      <img src="img/g10-900.webp" srcset="img/g10-480.webp 480w, img/g10-900.webp 900w, img/g10-1536.webp 1536w" sizes="(max-width:640px) 100vw, max(34vw, 75vh)" width="1536" height="2048" alt="Akwarium na czarnej szafce ze stalowym stelażem">
+      <a class="etykieta" href="#akwarystyka">Akwarystyka</a>
+    </figure>
+    <figure>
+      <img src="img/g6-900.webp" srcset="img/g6-480.webp 480w, img/g6-900.webp 900w, img/g6-1200.webp 1200w" sizes="(max-width:640px) 100vw, max(34vw, 75vh)" width="1200" height="1600" alt="Regał loft ze spawanych czarnych profili z drewnianymi skrzynkami" fetchpriority="high">
+      <a class="etykieta" href="#oferta">Loft</a>
+    </figure>
+    <figure>
+      <img src="img/g14-900.webp" srcset="img/g14-480.webp 480w, img/g14-900.webp 900w, img/g14-1536.webp 1536w" sizes="(max-width:640px) 100vw, max(34vw, 75vh)" width="1536" height="2048" alt="Stalowe podpory pod instalację w wymiennikowni">
+      <a class="etykieta" href="#oferta">Przemysł</a>
+    </figure>
+  </div>
+  <span class="zlacze z1" aria-hidden="true"></span><span class="zlacze z2" aria-hidden="true"></span>
+  <div class="hero-tekst">
+    <h1>Meble spawane i konstrukcje stalowe na wymiar w Gliwicach</h1>
+    <p>Stelaże i szafki pod akwarium, stoły i regały w stylu loft, podpory pod instalacje przemysłowe. Wszystko stoi na solidnym, spawanym szkielecie ze stali.</p>
+    <div class="przyciski">
+      <a class="btn btn-iskra" href="tel:+48513853247"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Zadzwoń: 513 853 247</a>
+      <a class="btn btn-jasny" href="#kontakt">Wyślij wymiary do wyceny</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="oferta">
+  <div class="kontener">
+    <div class="naglowek-sekcji">
+      <h2>Co spawamy</h2>
+      <p>Każda rzecz powstaje pod konkretne miejsce i wymiar. Stal jest szkieletem, a resztę dobieramy do wnętrza: drewno, szkło, białe albo czarne fronty.</p>
+    </div>
+    <div class="oferta">
+      <article class="karta spoina">
+        <div class="foto"><img src="img/g7-1000.webp" srcset="img/g7-640.webp 640w, img/g7-1000.webp 1000w" sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 30vw" width="1000" height="1333" alt="Biała szafka pod akwarium ze stelażem lampy" loading="lazy"></div>
+        <div class="opis">
+          <h3>Meble akwarystyczne</h3>
+          <p>Stelaże i szafki pod akwarium, regały na kilka zbiorników, pokrywy. Wymiary dopasowane do zbiornika.</p>
+          <a href="#akwarystyka">Szczegóły</a>
+        </div>
+      </article>
+      <article class="karta spoina">
+        <div class="foto"><img src="img/carousel-1-1000.webp" srcset="img/carousel-1-640.webp 640w, img/carousel-1-1000.webp 1000w" sizes="(max-width:640px) 92vw, (max-width:1100px) 46vw, 30vw" width="1000" height="563" alt="Stół z dębowym blatem na skrzyżowanych stalowych nogach" loading="lazy"></div>
+        <div class="opis">
+          <h3>Meble loft na zamówienie</h3>
+          <p>Stoły, hokery, regały, konsole, ścianki i drzwi w stalowych ramach. Surowa stal w parze z drewnem.</p>
+          <a href="#realizacje">Zobacz realizacje</a>
+        </div>
+      </article>
+      <article class="karta spoina">
+        <div class="foto"><img src="img/carousel-3-1000.webp" srcset="img/carousel-3-640.webp 640w, img/carousel-3-1000.webp 1000w" sizes="(max-width:640px) 92vw, (max-width:1100px) 92vw, 30vw" width="1000" height="563" alt="Rama ze stalowych profili pod instalację przemysłową" loading="lazy"></div>
+        <div class="opis">
+          <h3>Konstrukcje dla przemysłu</h3>
+          <p>Ramy, wzmocnienia i podpory pod instalacje, między innymi w wymiennikowniach ciepła. Dojeżdżamy do klientów w całym kraju.</p>
+          <a href="#kontakt">Zapytaj o konstrukcję</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja ciemna" id="akwarystyka">
+  <div class="kontener akwa">
+    <div class="ramka spoina"><img src="img/g12-1000.webp" srcset="img/g12-640.webp 640w, img/g12-1000.webp 1000w" sizes="(max-width:900px) 92vw, 640px" width="1000" height="1333" alt="Czarny stalowy regał na kilka akwariów" loading="lazy"></div>
+    <div>
+      <h2>Stelaż, który udźwignie akwarium</h2>
+      <p>Pełne akwarium waży kilkaset kilogramów i stoi latami. Dlatego pod obudową jest spawany stelaż ze stalowych profili, a nie płyta meblowa. Zbiornik stoi równo, szafka się nie ugina, a w środku zostaje miejsce na filtr i osprzęt.</p>
+      <ul>
+        <li>Stelaże pod akwarium</li>
+        <li>Szafki ze stelażem</li>
+        <li>Regały na kilka zbiorników</li>
+        <li>Pokrywy i gotowe zestawy</li>
+      </ul>
+      <a class="btn btn-iskra" href="#kontakt">Podaj wymiary zbiornika</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="realizacje">
+  <div class="kontener">
+    <div class="naglowek-sekcji">
+      <h2>Nasze realizacje</h2>
+      <div class="strzalki">
+        <button type="button" data-kier="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" data-kier="1" aria-label="Następne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="galeria-wrap">
+      <div class="galeria" tabindex="0" aria-label="Galeria realizacji, przesuń w bok">
+        <figure><img src="img/g6-480.webp" srcset="img/g6-480.webp 480w, img/g6-900.webp 900w" sizes="(max-width:640px) 72vw, 22vw" width="480" height="640" alt="Regał loft z czarnych profili" loading="lazy"><figcaption>Regał loft ze skrzynkami</figcaption></figure>
+        <figure><img src="img/g13-640.webp" srcset="img/g13-640.webp 640w, img/g13-1000.webp 1000w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="853" alt="Hokery i bar z maski ciągnika Ursus" loading="lazy"><figcaption>Bar z maski Ursusa i hokery</figcaption></figure>
+        <figure><img src="img/g10-480.webp" srcset="img/g10-480.webp 480w, img/g10-900.webp 900w" sizes="(max-width:640px) 72vw, 22vw" width="480" height="640" alt="Akwarium w czarnej zabudowie" loading="lazy"><figcaption>Akwarium w zabudowie</figcaption></figure>
+        <figure><img src="img/g15-640.webp" srcset="img/g15-640.webp 640w, img/g15-1000.webp 1000w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="853" alt="Ścianka i drzwi loft w stalowych ramach" loading="lazy"><figcaption>Ścianka i drzwi w stalowych ramach</figcaption></figure>
+        <figure><img src="img/g2-640.webp" srcset="img/g2-640.webp 640w, img/g2-740.webp 740w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="854" alt="Hokery ze stalowymi nogami przy blacie" loading="lazy"><figcaption>Hokery do kuchni</figcaption></figure>
+        <figure><img src="img/g18-640.webp" srcset="img/g18-640.webp 640w, img/g18-1000.webp 1000w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="853" alt="Stalowe konstrukcje pod rurociągi w wymiennikowni" loading="lazy"><figcaption>Konstrukcje pod rurociągi</figcaption></figure>
+        <figure><img src="img/g14-480.webp" srcset="img/g14-480.webp 480w, img/g14-900.webp 900w" sizes="(max-width:640px) 72vw, 22vw" width="480" height="640" alt="Podpory pod instalację w wymiennikowni" loading="lazy"><figcaption>Podpory w wymiennikowni</figcaption></figure>
+        <figure><img src="img/g5-640.webp" srcset="img/g5-640.webp 640w, img/g5-720.webp 720w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="959" alt="Szafka nocna w białej ramie ze stali z dębową szufladą" loading="lazy"><figcaption>Szafka nocna w stalowej ramie</figcaption></figure>
+        <figure><img src="img/g1-640.webp" srcset="img/g1-640.webp 640w, img/g1-900.webp 900w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="1138" alt="Hokery barowe ze stalowymi nogami" loading="lazy"><figcaption>Hokery barowe</figcaption></figure>
+        <figure><img src="img/g17-640.webp" srcset="img/g17-640.webp 640w, img/g17-1000.webp 1000w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="853" alt="Wieszaki z części samochodowych" loading="lazy"><figcaption>Wieszaki z części silnika</figcaption></figure>
+        <figure><img src="img/g16-640.webp" srcset="img/g16-640.webp 640w, img/g16-720.webp 720w" sizes="(max-width:640px) 72vw, 22vw" width="640" height="853" alt="Umywalki na stalowych nogach z obudów skrzyni biegów" loading="lazy"><figcaption>Umywalki ze skrzyń biegów</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="firma">
+  <div class="kontener firma">
+    <div class="foto spoina"><img src="img/about-640.webp" srcset="img/about-640.webp 640w, img/about-700.webp 700w" sizes="(max-width:900px) 92vw, 420px" width="700" height="700" alt="Spawanie stalowej konstrukcji" loading="lazy"></div>
+    <div>
+      <h2>RAF-SPAW z Gliwic</h2>
+      <p>Firmę prowadzi Rafał Kołodziej. Działamy od 2019 roku w Gliwicach: spawamy meble ze stalowym szkieletem, konstrukcje stalowe dla osób prywatnych i dla przemysłu. Pracujemy na Śląsku, a do klientów dojeżdżamy w całym kraju.</p>
+      <p>Najczęściej zaczyna się od zdjęcia albo szkicu z wymiarami. Resztę ustalamy razem.</p>
+      <ol class="kroki">
+        <li><b>Wymiary lub zdjęcie</b><span>Telefonicznie, mailem albo przez formularz.</span></li>
+        <li><b>Ustalenia i cena</b><span>Materiał, kolor, wykończenie i termin.</span></li>
+        <li><b>Spawanie</b><span>Szkielet ze stali i wykończenie pod wnętrze.</span></li>
+        <li><b>Odbiór lub dowóz</b><span>W Gliwicach albo na miejsce u klienta.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="kontakt">
+  <div class="kontener kontakt">
+    <div>
+      <h2>Kontakt</h2>
+      <div class="dane">
+        <div><small>Telefon</small><a class="duzy" href="tel:+48513853247">513 853 247</a></div>
+        <div><small>E-mail</small><a class="duzy" href="mailto:firmarafspaw@gmail.com" style="font-size:clamp(20px,1.8vw,28px)">firmarafspaw@gmail.com</a></div>
+        <div><small>Adres</small>ul. Stanisława Kunickiego 21, Gliwice</div>
+        <div><small>Godziny pracy</small>
+          <div class="godziny"><span>poniedziałek - piątek</span><span>9:00 - 19:00</span><span>sobota</span><span>9:00 - 12:00</span><span>niedziela</span><span>nieczynne</span></div>
+        </div>
+      </div>
+      <div class="mapa" id="mapa"><button class="btn btn-czarny" type="button" id="pokaz-mape">Pokaż mapę Google</button></div>
+    </div>
+    <form id="formularz" novalidate>
+      <h3>Zapytanie o wycenę</h3>
+      <div class="dwa">
+        <label>Imię<input name="imie" autocomplete="name"></label>
+        <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      <label>Co mamy zrobić?<textarea name="tresc" placeholder="Np. szafka pod akwarium 120 x 50 cm, wysokość 80 cm, białe fronty"></textarea></label>
+      <label>Zdjęcie lub rysunek (opcjonalnie)<input name="plik" type="file" accept="image/*,.pdf"></label>
+      <button class="btn btn-iskra" type="submit">Wyślij zapytanie</button>
+      <p class="uwaga">Odpowiadamy w godzinach pracy.</p>
+      <p id="komunikat" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="kontener">
+    <div class="siatka">
+      <div>
+        <a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" stroke-width="3.4"/><path d="M14.2 29V11h6.6c4 0 6.3 2 6.3 5.3 0 2.5-1.3 4.2-3.6 4.9L27.6 29h-4.4l-3.7-7.4h-1.3V29h-4zm4-10.7h2.4c1.7 0 2.6-.8 2.6-2.1s-.9-2.1-2.6-2.1h-2.4v4.2z" fill="currentColor"/></svg><span>RAF-SPAW.PL</span></a>
+        <p>RAF SPAW Rafał Kołodziej<br>Meble spawane i konstrukcje stalowe, Gliwice</p>
+      </div>
+      <div><b>Oferta</b><a href="#akwarystyka">Meble akwarystyczne</a><br><a href="#oferta">Meble loft</a><br><a href="#oferta">Konstrukcje stalowe</a></div>
+      <div><b>Kontakt</b><a href="tel:+48513853247">513 853 247</a><br><a href="mailto:firmarafspaw@gmail.com">firmarafspaw@gmail.com</a><br>ul. Kunickiego 21, Gliwice</div>
+      <div><b>Godziny</b>pn - pt 9:00 - 19:00<br>sob 9:00 - 12:00</div>
+    </div>
+    <div class="dol">
+      <span>© <span id="rok">2026</span> RAF-SPAW. Wszelkie prawa zastrzeżone.</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=raf-spaw.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rok=document.getElementById('rok');rok.textContent=new Date().getFullYear();
+  var b=document.querySelector('.burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('otwarte')});
+  // galeria: przeciąganie myszą i strzałki
+  var g=document.querySelector('.galeria'),x0=0,s0=0,ciag=false;
+  g.addEventListener('mousedown',function(e){ciag=true;x0=e.pageX;s0=g.scrollLeft;g.classList.add('ciagnie')});
+  window.addEventListener('mouseup',function(){if(ciag){ciag=false;g.classList.remove('ciagnie')}});
+  window.addEventListener('mousemove',function(e){if(ciag){e.preventDefault();g.scrollLeft=s0-(e.pageX-x0)}});
+  document.querySelectorAll('.strzalki button').forEach(function(btn){btn.addEventListener('click',function(){
+    var f=g.querySelector('figure');g.scrollBy({left:(+btn.dataset.kier)*(f.offsetWidth+16)*2,behavior:'smooth'});
+  })});
+  // mapa ładowana dopiero po kliknięciu
+  document.getElementById('pokaz-mape').addEventListener('click',function(){
+    document.getElementById('mapa').innerHTML='<iframe title="Mapa dojazdu RAF-SPAW" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kunickiego+21,+Gliwice&output=embed"></iframe>';
+  });
+  document.getElementById('formularz').addEventListener('submit',function(e){
+    e.preventDefault();document.getElementById('komunikat').textContent='To podgląd strony, formularz zacznie wysyłać zapytania po wdrożeniu.';
+  });
+})();
+</script>
+</body>
+</html>
